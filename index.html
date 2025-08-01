@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doller buy & sell💰©</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Doller buy & sell💰©</h1>
+
+    <div class="section buy">
+      <h2>Buy USD (from us)</h2>
+      <form id="buyForm">
+        <label>Dollar Amount: <input type="number" id="buyDollar" min="1" required></label><br>
+        <label>Total (BDT): <input type="text" id="buyTotal" readonly></label><br>
+        <label>Select Wallet:
+          <select required>
+            <option value="">--Select--</option>
+            <option value="Binance">Binance</option>
+            <option value="Bybit">Bybit</option>
+            <option value="Payeer">Payeer</option>
+          </select>
+        </label><br>
+        <label>Transaction Screenshot: <input type="file" accept="image/*" required></label><br>
+        <label>Your Wallet Address (UID/Payeer ID): <input type="text" required></label><br>
+        <button type="submit">Submit Buy Order</button>
+      </form>
+      <p>✅ Order complete হলে Screenshot/Feedback দিন: <a href="https://t.me/dollerbuysellbdlmt" target="_blank">Telegram Feedback Group</a></p>
+    </div>
+
+    <div class="section sell">
+      <h2>Sell USD (to us)</h2>
+      <form id="sellForm">
+        <label>Dollar Amount: <input type="number" id="sellDollar" min="1" required></label><br>
+        <label>Total after fee (BDT): <input type="text" id="sellTotal" readonly></label><br>
+        <label>Wallet Type:
+          <select required>
+            <option value="">--Select--</option>
+            <option value="Binance">Binance</option>
+            <option value="Bybit">Bybit</option>
+            <option value="Payeer">Payeer</option>
+          </select>
+        </label><br>
+        <label>Transaction Screenshot: <input type="file" accept="image/*" required></label><br>
+        <label>bKash/Nagad Number: <input type="text" required></label><br>
+        <label>Payment Receive Wallet:
+          <select required>
+            <option value="">--Select--</option>
+            <option value="bKash">bKash</option>
+            <option value="Nagad">Nagad</option>
+          </select>
+        </label><br>
+        <button type="submit">Submit Sell Order</button>
+      </form>
+      <p>✅ Order complete হলে Screenshot/Feedback দিন: <a href="https://t.me/dollerbuysellbdlmt" target="_blank">Telegram Feedback Group</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
